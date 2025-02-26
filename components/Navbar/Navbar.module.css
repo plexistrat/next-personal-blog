@@ -1,0 +1,42 @@
+.navbar {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+  background-color: darkolivegreen;
+  padding: 10px;
+
+  @media screen and (max-width: 768px) {
+    flex-direction: column;
+  }
+  @media screen and (max-width: 480px) {
+    width: 0;
+    background-color: transparent;
+  }
+}
+
+.navbarTitle {
+  color: rgb(225, 217, 217);
+  font-size: 30px;
+}
+
+.navbarButtons {
+  display: flex;
+  gap: 10px;
+
+  @media screen and (max-width: 480px) {
+    display: none;
+  }
+}
+
+.navbarButtons button {
+  padding: 10px;
+  background-color: transparent;
+  border: none;
+  cursor: pointer;
+  color: rgb(225, 217, 217);
+}
+
+.navbarButtons button:hover {
+  color: rgb(244, 146, 8);
+}
