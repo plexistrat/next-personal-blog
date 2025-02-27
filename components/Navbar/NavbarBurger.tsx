@@ -1,4 +1,3 @@
-// import { useState } from 'react';
 import { Burger } from '@mantine/core';
 import { useDisclosure } from '@mantine/hooks';
 import MenuList from './MenuList';
