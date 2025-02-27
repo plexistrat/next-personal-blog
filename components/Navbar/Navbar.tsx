@@ -1,18 +1,19 @@
 import React from 'react';
+import Link from 'next/link';
+import BurgerButton from './NavbarBurger';
 import styles from './Navbar.module.css';
 
-type Props = {};
-
-const Navbar = (props: Props) => {
+const Navbar = () => {
   return (
     <div className={styles.navbar}>
       <h2 className={styles.navbarTitle}>TITLE</h2>
       <div className={styles.navbarButtons}>
-        <button type="button">Home</button>
-        <button type="button">About</button>
-        <button type="button">News</button>
-        <button type="button">Contact</button>
+        <Link href="/">Home</Link>
+        <Link href="/about">About</Link>
+        <Link href="/contact">Contact</Link>
+        <Link href="/news">News</Link>
       </div>
+      <BurgerButton />
     </div>
   );
 };

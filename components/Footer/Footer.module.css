@@ -1,0 +1,109 @@
+.footer {
+  background-color: #333;
+  color: white;
+  padding: 40px 0;
+  text-align: center;
+}
+
+.footerContainer {
+  max-width: 1200px;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  align-items: center;
+}
+
+.footerNav {
+  list-style: none;
+  padding: 0;
+  display: flex;
+  gap: 20px;
+
+  @media screen and (max-width: 320px) {
+    flex-direction: column;
+  }
+}
+
+.footerNav li a {
+  color: rgb(68, 149, 89);
+  text-decoration: none;
+}
+
+.footerNav li a:hover {
+  text-decoration: underline;
+}
+
+.newsletter {
+  text-align: center;
+}
+
+.newsletterForm {
+  display: flex;
+  gap: 10px;
+  justify-content: center;
+
+  @media screen and (max-width: 320px) {
+    flex-direction: column;
+  }
+}
+
+.newsletterForm input {
+  padding: 10px;
+  font-size: 16px;
+  border: none;
+}
+
+.newsletterForm button {
+  padding: 10px 20px;
+  font-size: 16px;
+  background-color: #555;
+  color: white;
+  border: none;
+  cursor: pointer;
+}
+
+.newsletterForm button:hover {
+  background-color: #777;
+}
+.social {
+  display: flex;
+  gap: 15px;
+
+  @media screen and (max-width: 320px) {
+    flex-direction: column;
+  }
+}
+
+.social a {
+  color: white;
+  text-decoration: none;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.social a:hover {
+  text-decoration: underline;
+}
+.social img {
+  width: 20px;
+  height: 20px;
+}
+
+.scrollTopButton {
+  background-color: #555;
+  color: white;
+  padding: 10px 20px;
+  font-size: 16px;
+  border: none;
+  cursor: pointer;
+  display: none; /* Hidden by default */
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+}
+
+.scrollTopButton:hover {
+  background-color: #777;
+}

@@ -1,0 +1,24 @@
+.menuList {
+  background-color: blueviolet;
+  padding: 10px;
+  border-radius: 10px;
+  margin-top: 10px;
+}
+.menuListItems {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+.menuListItem {
+  cursor: pointer;
+  color: rgb(225, 217, 217);
+  font-size: 20px;
+}
+.menuListItem:hover {
+  color: rgb(201, 145, 145);
+  /* font-size: 22px; */
+  /* text-decoration: underline; */
+  transition: all 0.3s ease-in-out;
+  transform: scale(1.1);
+  font-weight: bold;
+}
