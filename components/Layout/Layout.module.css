@@ -1,4 +1,8 @@
 .wrapper {
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
+
   @media screen and (max-width: 480px) {
     display: flex;
     flex-direction: column;

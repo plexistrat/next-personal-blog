@@ -30,30 +30,11 @@ const Footer = () => {
   return (
     <footer className={styles.footer}>
       <div className={styles.footerContainer}>
-        <p>&copy; {year} Your Blog Name. All Rights Reserved.</p>
-
-        <nav>
-          <ul className={styles.footerNav}>
-            <li>
-              <a href="/about">About</a>
-            </li>
-            <li>
-              <a href="/contact">Contact</a>
-            </li>
-            <li>
-              <a href="/privacy-policy">Privacy Policy</a>
-            </li>
-          </ul>
-        </nav>
-
-        <div className={styles.newsletter}>
-          <h3>Subscribe to our Newsletter</h3>
-          <form onSubmit={handleSubmit} className={styles.newsletterForm}>
-            <input type="email" placeholder="Enter your email" required />
-            <button type="submit">Subscribe</button>
-          </form>
+        <div className={styles.contact}>
+          <h2>Επικοινωνία</h2>
+          <p>Email:info@adespotablog.gr</p>
+          <p>Τηλέφωνο: +30 210 1234567</p>
         </div>
-
         <div className={styles.social}>
           <a href="https://twitter.com/yourprofile" target="_blank" rel="noopener noreferrer">
             <img src="/icons/twitter.svg" alt="Twitter" />
@@ -68,13 +49,26 @@ const Footer = () => {
             Instagram
           </a>
         </div>
-      </div>
 
-      {showButton && (
-        <button onClick={scrollToTop} className={styles.scrollTopButton}>
-          ⬆️ Top
-        </button>
-      )}
+        <div className={styles.newsletter}>
+          <h3>Subscribe to our Newsletter</h3>
+          <form onSubmit={handleSubmit} className={styles.newsletterForm}>
+            <input type="email" placeholder="Enter your email" required />
+            <button type="submit">Subscribe</button>
+          </form>
+        </div>
+        <p className={styles.disclaimer}>
+          "Δεν μπορείς να σώσεις όλα τα αδέσποτα του κόσμου, αλλά μπορείς να αλλάξεις τον κόσμο για
+          ένα από αυτά."
+        </p>
+        <p className={styles.copyright}>&copy; {year} Your Blog Name. All Rights Reserved.</p>
+
+        {showButton && (
+          <button type="button" onClick={scrollToTop} className={styles.scrollTopButton}>
+            ⬆️ Top
+          </button>
+        )}
+      </div>
     </footer>
   );
 };
