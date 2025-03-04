@@ -57,11 +57,11 @@ const Footer = () => {
             <button type="submit">Subscribe</button>
           </form>
         </div>
-        <p className={styles.disclaimer}>
+        {/* <p className={styles.disclaimer}>
           "Δεν μπορείς να σώσεις όλα τα αδέσποτα του κόσμου, αλλά μπορείς να αλλάξεις τον κόσμο για
           ένα από αυτά."
-        </p>
-        <p className={styles.copyright}>&copy; {year} Your Blog Name. All Rights Reserved.</p>
+        </p> */}
+        <p className={styles.copyright}>&copy; {year} Φίλοι Χωρίς Σπίτι. All Rights Reserved.</p>
 
         {showButton && (
           <button type="button" onClick={scrollToTop} className={styles.scrollTopButton}>
