@@ -6,7 +6,7 @@ import styles from './Navbar.module.css';
 const Navbar = () => {
   return (
     <div className={styles.navbar}>
-      <h2 className={styles.navbarTitle}>TITLE</h2>
+      <h2 className={styles.navbarTitle}>Φίλοι Χωρίς Σπίτι </h2>
       <div className={styles.navbarButtons}>
         <Link href="/">Home</Link>
         <Link href="/about">About</Link>

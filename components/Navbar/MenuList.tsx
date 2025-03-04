@@ -1,21 +1,28 @@
-import React from 'react';
 import styles from './MenuList.module.css';
 
 function MenuList() {
   return (
     <div className={styles.menuList}>
       <ul className={styles.menuListItems}>
-        <li a href="#" className={styles.menuListItem}>
-          Home
+        <li>
+          <a href="/home" className={styles.menuListItem}>
+            Home
+          </a>
         </li>
-        <li a href="#" className={styles.menuListItem}>
-          About
+        <li>
+          <a href="/about" className={styles.menuListItem}>
+            About
+          </a>
         </li>
-        <li a href="#" className={styles.menuListItem}>
-          News
+        <li>
+          <a href="/news" className={styles.menuListItem}>
+            News
+          </a>
         </li>
-        <li a href="#" className={styles.menuListItem}>
-          Contact
+        <li>
+          <a href="/contact" className={styles.menuListItem}>
+            Contact
+          </a>
         </li>
       </ul>
     </div>

@@ -1,40 +1,76 @@
 .navbar {
   display: flex;
-  align-items: center;
+  /* align-items: center; */
   justify-content: space-between;
+  /* flex-direction: column; */
   width: 100%;
+  height: 120px;
   background-color: darkolivegreen;
   padding: 10px;
+  position: fixed;
+  top: 0;
+  /* left: 0; */
 
-  @media screen and (max-width: 768px) {
-    flex-direction: column;
-  }
   @media screen and (max-width: 480px) {
-    width: 0;
-    background-color: transparent;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
   }
 }
 
 .navbarTitle {
-  color: rgb(225, 217, 217);
-  font-size: 30px;
+  margin-left: 50px;
+  color: rgb(217, 143, 143);
+  font-size: 45px;
+  font-family: 'Courier New', Courier, monospace;
+
+  @media screen and (max-width: 1000px) {
+    margin-left: 7px;
+  }
+
+  @media screen and (max-width: 900px) {
+    display: flex;
+    font-size: 35px;
+  }
+  @media screen and (max-width: 480px) {
+    display: flex;
+    font-size: 28px;
+  }
 }
 
 .navbarButtons {
   display: flex;
-  gap: 10px;
+  gap: 50px;
+  font-family: 'Courier New', Courier, monospace;
+  font-size: 20px;
+  font-weight: bold;
+  text-decoration: none;
+  margin-top: 60px;
 
-  @media screen and (max-width: 480px) {
+  @media screen and (max-width: 1000px) {
+    gap: 20px;
+  }
+
+  @media screen and (max-width: 900px) {
+    gap: 10px;
+  }
+
+  @media screen and (max-width: 700px) {
     display: none;
   }
 }
 
 .navbarButtons button {
-  padding: 10px;
+  /* padding: 10px; */
   background-color: transparent;
   border: none;
   cursor: pointer;
   color: rgb(225, 217, 217);
+
+  @media screen and (max-width: 900px) {
+    display: none;
+  }
 }
 
 .navbarButtons button:hover {
