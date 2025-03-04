@@ -36,6 +36,10 @@ const Footer = () => {
           <p>Τηλέφωνο: +30 210 1234567</p>
         </div>
         <div className={styles.social}>
+          <p className={styles.disclaimer}>
+            "Δεν μπορείς να σώσεις όλα τα αδέσποτα του κόσμου, αλλά μπορείς να αλλάξεις τον κόσμο
+            για ένα από αυτά."
+          </p>
           <a href="https://twitter.com/yourprofile" target="_blank" rel="noopener noreferrer">
             <img src="/icons/twitter.svg" alt="Twitter" />
             Twitter
@@ -48,6 +52,8 @@ const Footer = () => {
             <img src="/icons/instagram.svg" alt="Instagram" />
             Instagram
           </a>
+
+          <p className={styles.copyright}>&copy; {year} Φίλοι Χωρίς Σπίτι. All Rights Reserved.</p>
         </div>
 
         <div className={styles.newsletter}>
@@ -57,11 +63,6 @@ const Footer = () => {
             <button type="submit">Subscribe</button>
           </form>
         </div>
-        {/* <p className={styles.disclaimer}>
-          "Δεν μπορείς να σώσεις όλα τα αδέσποτα του κόσμου, αλλά μπορείς να αλλάξεις τον κόσμο για
-          ένα από αυτά."
-        </p> */}
-        <p className={styles.copyright}>&copy; {year} Φίλοι Χωρίς Σπίτι. All Rights Reserved.</p>
 
         {showButton && (
           <button type="button" onClick={scrollToTop} className={styles.scrollTopButton}>

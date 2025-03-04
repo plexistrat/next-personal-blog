@@ -5,7 +5,7 @@ function MenuList() {
     <div className={styles.menuList}>
       <ul className={styles.menuListItems}>
         <li>
-          <a href="/home" className={styles.menuListItem}>
+          <a href="/#" className={styles.menuListItem}>
             Home
           </a>
         </li>
