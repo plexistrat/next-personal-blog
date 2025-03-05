@@ -2,17 +2,21 @@
   position: absolute;
   top: 0;
   left: 0;
+  bottom: 0;
+  right: 0;
   width: 100%;
   height: 100vh;
-  background-color: rgb(133, 43, 216);
+  background-color: rgb(142, 82, 112);
   padding: 200px;
-  z-index: -5;
+  z-index: -80;
 
   @media screen and (max-width: 500px) {
     padding: 100px;
   }
 }
 .menuListItems {
+  color: rgb(36, 27, 27);
+
   display: flex;
   flex-direction: column;
   list-style: none;
@@ -20,14 +24,15 @@
   margin: 0;
 }
 .menuListItem {
+  /* color: rgb(36, 27, 27); */
+  text-decoration: none;
   cursor: pointer;
-  color: rgb(225, 217, 217);
   font-size: 20px;
 }
 .menuListItem:hover {
-  color: rgb(201, 145, 145);
-  /* font-size: 22px; */
-  /* text-decoration: underline; */
+  color: rgb(41, 26, 26);
+  font-size: 22px;
+  text-decoration: underline;
   transition: all 0.3s ease-in-out;
   transform: scale(1.1);
   font-weight: bold;

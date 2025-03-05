@@ -8,10 +8,18 @@ const Navbar = () => {
     <div className={styles.navbar}>
       <h2 className={styles.navbarTitle}>Φίλοι Χωρίς Σπίτι </h2>
       <div className={styles.navbarButtons}>
-        <Link href="/">Home</Link>
-        <Link href="/about">About</Link>
-        <Link href="/contact">Contact</Link>
-        <Link href="/news">News</Link>
+        <Link style={{ color: 'black', textDecoration: 'none' }} href="/">
+          Home
+        </Link>
+        <Link style={{ color: 'black', textDecoration: 'none' }} href="/about">
+          About
+        </Link>
+        <Link style={{ color: 'black', textDecoration: 'none' }} href="/contact">
+          Contact
+        </Link>
+        <Link style={{ color: 'black', textDecoration: 'none' }} href="/news">
+          News
+        </Link>
       </div>
       <BurgerButton />
     </div>
