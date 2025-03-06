@@ -1,5 +1,5 @@
 .footer {
-  background-color: #6ec6ff;
+  background-color: #ffffff;
   /* position: absolute; */
   /* bottom: 0; */
   width: 100%;
@@ -127,7 +127,7 @@
   color: #333333;
   text-align: center;
   margin-top: 5px;
-  margin-bottom: 5px;
+  margin-bottom: 120px;
 
   @media screen and (max-width: 1000px) {
     font-size: 12px;

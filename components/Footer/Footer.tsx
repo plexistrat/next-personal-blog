@@ -1,4 +1,7 @@
 import React, { useEffect, useState } from 'react';
+import { BsInstagram } from 'react-icons/bs';
+import { FaFacebook } from 'react-icons/fa';
+import { TiSocialTwitter } from 'react-icons/ti';
 import styles from './Footer.module.css';
 
 const Footer = () => {
@@ -41,15 +44,18 @@ const Footer = () => {
             για ένα από αυτά."
           </p>
           <a href="https://twitter.com/yourprofile" target="_blank" rel="noopener noreferrer">
-            <img src="/icons/twitter.svg" alt="Twitter" />
+            {/* <img src="/icons/twitter.svg" alt="Twitter" /> */}
+            <TiSocialTwitter />
             Twitter
           </a>
           <a href="https://facebook.com/yourprofile" target="_blank" rel="noopener noreferrer">
-            <img src="/icons/facebook.svg" alt="Facebook" />
+            {/* <img src="/icons/facebook.svg" alt="Facebook" /> */}
+            <FaFacebook />
             Facebook
           </a>
           <a href="https://instagram.com/yourprofile" target="_blank" rel="noopener noreferrer">
-            <img src="/icons/instagram.svg" alt="Instagram" />
+            {/* <img src="/icons/instagram.svg" alt="Instagram" /> */}
+            <BsInstagram />
             Instagram
           </a>
 
