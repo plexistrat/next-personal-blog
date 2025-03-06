@@ -1,23 +1,18 @@
 .footer {
   background-color: #ffffff;
-  /* position: absolute; */
-  /* bottom: 0; */
   width: 100%;
 }
-
-.footerContainer {
+.contactSocialNewsletter {
   display: flex;
+  flex-direction: row;
+  align-items: center;
   justify-content: space-around;
-  padding-top: 20px;
 
-  @media screen and (max-width: 500px) {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    /* height: 350px; */
-    /* gap: 20px; */
-  }
+ {@media screen and (max-width: 750px)
+  
 }
+}
+
 .contact {
   text-align: center;
   color: #333333;
@@ -56,19 +51,7 @@
 
 .newsletter {
   text-align: center;
-  color: #333333;
-}
-
-.newsletterForm {
-  display: flex;
-  flex-direction: row;
-  gap: 10px;
-
-  @media screen and (max-width: 1000px) {
-    flex-direction: column;
-    align-items: center;
-    gap: 5px;
-  }
+  color: #454343;
 }
 
 .newsletter h3 {
@@ -80,11 +63,11 @@
 }
 
 .newsletterForm input {
-  color: #333333;
+  color: #aca6a6;
   padding: 8px;
   font-size: 14px;
   border: none;
-  border-radius: 8px;
+  border-radius: 18px;
 
   @media screen and (max-width: 1000px) {
     font-size: 12px;
@@ -97,11 +80,11 @@
   background-color: #333333;
   border: none;
   cursor: pointer;
-  border-radius: 8px;
+  border-radius: 15px;
 }
 
 .newsletterForm button:hover {
-  background-color: #777;
+  background-color: #9b9999;
 }
 
 .scrollTopButton {
@@ -122,12 +105,11 @@
 }
 .disclaimer {
   font-size: 14px;
-  font-weight: bold;
-  font-family: 'Courier New', Courier, monospace;
+  font-weight: bolder;
   color: #333333;
   text-align: center;
-  margin-top: 5px;
-  margin-bottom: 120px;
+  padding-top: 20px;
+  margin-bottom: 20px;
 
   @media screen and (max-width: 1000px) {
     font-size: 12px;

@@ -1,5 +1,6 @@
 // import { ColorSchemeToggle } from '../components/ColorSchemeToggle/ColorSchemeToggle';
 // import { Welcome } from '../components/Welcome/Welcome';
+import { ArticlesCardsGrid } from '@/components/ArticlesCards/ArticlesCardsGrid';
 import styles from './index.module.css';
 
 export default function HomePage() {
@@ -14,6 +15,7 @@ export default function HomePage() {
           εθελοντική βοήθεια ή κάνε μια δωρεά σήμερα. Δώσε Ελπίδα, Δώσε Αγάπη,Γίνε η φωνή τους
         </p>
       </div>
+      {/* <ArticlesCardsGrid /> */}
     </>
   );
 }
