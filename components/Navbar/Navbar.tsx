@@ -1,4 +1,3 @@
-import React from 'react';
 import Link from 'next/link';
 import BurgerButton from './NavbarBurger';
 import styles from './Navbar.module.css';

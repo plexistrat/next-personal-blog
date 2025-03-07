@@ -1,5 +1,5 @@
 .footer {
-  background-color: #ffffff;
+  background-color: #000000;
   width: 100%;
 }
 .contactSocialNewsletter {
@@ -15,7 +15,7 @@
 
 .contact {
   text-align: center;
-  color: #333333;
+  color: #ffffff;
 
   @media screen and (max-width: 1000px) {
     font-size: 14px;
@@ -30,7 +30,7 @@
 }
 
 .social a {
-  color: #333333;
+  color: #ffffff;
   display: flex;
   text-decoration: none;
   gap: 5px;
@@ -50,7 +50,7 @@
 
 .newsletter {
   text-align: center;
-  color: #454343;
+  color: #ffffff;
 }
 
 .newsletter h3 {
@@ -75,24 +75,24 @@
 .newsletterForm button {
   padding: 5px 5px;
   font-size: 14px;
-  background-color: #333333;
+  background-color: #000000;
   border: none;
   cursor: pointer;
   border-radius: 15px;
 }
 
 .newsletterForm button:hover {
-  background-color: #f7f5f5;
+  background-color: #706767;
 }
 
 .scrollTopButton {
-  background-color: #333;
-  color: white;
+  /* background-color: #000000; */
+  color: rgb(0, 0, 0);
   padding: 10px 20px;
   font-size: 16px;
   border: none;
   cursor: pointer;
-  display: none;
+  /* display: none; */
   position: fixed;
   bottom: 20px;
   right: 20px;
@@ -104,7 +104,7 @@
 .disclaimer {
   font-size: 14px;
   font-weight: bolder;
-  color: #333333;
+  color: #ffffff;
   text-align: center;
   padding-top: 20px;
   margin-bottom: 20px;
@@ -127,6 +127,6 @@
 }
 .copyright {
   font-size: 14px;
-  color: #333333;
+  color: #ffffff;
   text-align: center;
 }
