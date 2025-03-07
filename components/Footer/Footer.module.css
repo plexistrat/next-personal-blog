@@ -8,9 +8,9 @@
   align-items: center;
   justify-content: space-around;
 
- {@media screen and (max-width: 750px)
-  
-}
+  @media screen and (max-width: 800px) {
+    flex-direction: column;
+  }
 }
 
 .contact {
@@ -25,7 +25,7 @@
 
 .social {
   display: flex;
-  flex-direction: column;
+  /* flex-direction: column; */
   gap: 10px;
 }
 
@@ -40,7 +40,6 @@
 }
 
 .social a:hover {
-  text-decoration: underline;
   transition: all 0.3s ease-in-out;
   transform: scale(1.1);
 }
@@ -63,7 +62,6 @@
 }
 
 .newsletterForm input {
-  color: #aca6a6;
   padding: 8px;
   font-size: 14px;
   border: none;
@@ -84,7 +82,7 @@
 }
 
 .newsletterForm button:hover {
-  background-color: #9b9999;
+  background-color: #f7f5f5;
 }
 
 .scrollTopButton {
@@ -115,14 +113,20 @@
     font-size: 12px;
   }
 
+  @media screen and (max-width: 800px) {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-left: 20px;
+    padding-right: 20px;
+  }
+
   @media screen and (max-width: 500px) {
     font-size: 10px;
   }
 }
 .copyright {
-  font-size: 12px;
+  font-size: 14px;
   color: #333333;
   text-align: center;
-  margin-top: 5px;
-  margin-bottom: 10px;
 }

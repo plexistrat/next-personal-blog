@@ -1,11 +1,7 @@
 .burgerButton {
   display: none;
 
-  @media screen and (max-width: 700px) {
+  @media screen and (max-width: 730px) {
     display: block;
-  }
-
-  @media screen and (max-width: 313px) {
-    margin-bottom: 15px;
   }
 }

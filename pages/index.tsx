@@ -1,6 +1,6 @@
 // import { ColorSchemeToggle } from '../components/ColorSchemeToggle/ColorSchemeToggle';
-// import { Welcome } from '../components/Welcome/Welcome';
 import { ArticlesCardsGrid } from '@/components/ArticlesCards/ArticlesCardsGrid';
+// import { Welcome } from '../components/Welcome/Welcome';
 import styles from './index.module.css';
 
 export default function HomePage() {
