@@ -11,13 +11,13 @@ const Navbar = () => {
           Home
         </Link>
         <Link style={{ color: 'black', textDecoration: 'none' }} href="/about">
-          About
+          Ενημέρωση
         </Link>
         <Link style={{ color: 'black', textDecoration: 'none' }} href="/contact">
-          Contact
+          Νέα
         </Link>
         <Link style={{ color: 'black', textDecoration: 'none' }} href="/news">
-          News
+          Επικοινωνία
         </Link>
       </div>
       <BurgerButton />
