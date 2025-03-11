@@ -1,5 +1,4 @@
 import { AspectRatio, Card, Container, Image, SimpleGrid, Text } from '@mantine/core';
-import classes from './ArticlesCardsGrid.module.css';
 import styles from './ArticlesCardsGrid.module.css';
 
 const mockdata = [
@@ -26,23 +25,23 @@ const mockdata = [
   },
 ];
 
-export function ArticlesCardsGrid() {
+export function ArticlesCardsGrid(_props: any) {
   const cards = mockdata.map((article) => (
-    <Card key={article.title} p="md" radius="md" component="a" href="#" className={classes.card}>
+    <Card key={article.title} p="md" radius="md" component="a" href="#" className={styles.card}>
       <AspectRatio ratio={1920 / 1080}>
         <Image src={article.image} />
       </AspectRatio>
       <Text c="dimmed" size="xs" tt="uppercase" fw={700} mt="md">
         {article.date}
       </Text>
-      <Text className={classes.title} mt={5}>
+      <Text className={styles.title} mt={5}>
         {article.title}
       </Text>
     </Card>
   ));
 
   return (
-    <Container py="xl">
+    <Container className={styles.container} py="xl">
       <SimpleGrid className={styles.grid} cols={{ base: 1, sm: 2 }}>
         {cards}
       </SimpleGrid>

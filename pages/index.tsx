@@ -20,7 +20,7 @@ export default function HomePage() {
       </div>
       <div className={styles.information}>
         <h3>Eνημέρωση</h3>
-        <ArticlesCardsGrid />
+        <ArticlesCardsGrid className={styles.articlesCardsGrid} />
       </div>
     </>
   );

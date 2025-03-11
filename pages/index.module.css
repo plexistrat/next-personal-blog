@@ -55,7 +55,6 @@
 
 .homePageBanner h4 {
   text-align: center;
-
   font-size: 32px;
   line-height: 1.5;
   color: #ffffff;
@@ -76,4 +75,9 @@
   font-size: 42px;
   line-height: 1.5;
   color: #333333;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+}
+.articlesCardsGrid {
 }
