@@ -1,4 +1,5 @@
-import { useState } from 'react';
+import { useEffect, useState } from 'react';
+import Image from 'next/image';
 import Link from 'next/link';
 import BurgerButton from './NavbarBurger';
 import styles from './Navbar.module.css';
@@ -14,11 +15,22 @@ const Navbar = () => {
     }
   };
 
-  window.addEventListener('scroll', changeColor);
+  useEffect(() => {
+    if (typeof window !== 'undefined') {
+      window.addEventListener('scroll', changeColor);
+    }
+    return () => {
+      if (typeof window !== 'undefined') {
+        window.removeEventListener('scroll', changeColor);
+      }
+    };
+  }, []);
 
   return (
     <div className={color ? styles.navbarNoColor : styles.navbar}>
       <h2 className={styles.navbarTitle}>Φίλοι Χωρίς Σπίτι </h2>
+      {/* <Image src="/logo.png" className={styles.navbarLogo} width={50} height={50} alt="logo" /> */}
+
       <div className={styles.navbarButtons}>
         <Link
           style={

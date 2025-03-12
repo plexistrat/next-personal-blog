@@ -1,11 +1,15 @@
-import { ArticlesCardsGrid } from '@/components/ArticlesCards/ArticlesCardsGrid';
 // import { ColorSchemeToggle } from '../components/ColorSchemeToggle/ColorSchemeToggle';
 // import { Welcome } from '../components/Welcome/Welcome';
+import Head from 'next/head';
+import Card from '@/components/Card/Card';
 import styles from './index.module.css';
 
 export default function HomePage() {
   return (
     <>
+      <Head>
+        <title>Home</title>
+      </Head>
       {/* <Welcome /> */}
       <div className={styles.homePage}>
         <h2>Καλώς ήρθατε στην ιστοσελιδα "Φίλοι Χωρίς Σπίτι"</h2>
@@ -13,14 +17,12 @@ export default function HomePage() {
         {/* <ColorSchemeToggle /> */}
       </div>
       <div className={styles.homePageBanner}>
-        <h4>
-          Υιοθέτησε, πρόσφερε εθελοντική βοήθεια ή κάνε μια δωρεά σήμερα. Δώσε Ελπίδα, Δώσε Αγάπη
-        </h4>
         <h4>Γίνε η φωνή τους</h4>
+        <p>Υιοθέτησε,πρόσφερε εθελοντική βοήθεια ή κάνε μια δωρεά σήμερα.</p>
+        <h4>Δώσε Ελπίδα, Δώσε Αγάπη</h4>
       </div>
-      <div className={styles.information}>
-        <h3>Eνημέρωση</h3>
-        <ArticlesCardsGrid className={styles.articlesCardsGrid} />
+      <div className={styles.cards}>
+        <Card />
       </div>
     </>
   );
