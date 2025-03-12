@@ -23,6 +23,10 @@ export default function HomePage() {
       </div>
       <div className={styles.cards}>
         <Card />
+        <Card />
+        <Card />
+        <Card />
+        <Card />
       </div>
     </>
   );
