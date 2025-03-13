@@ -1,16 +1,41 @@
-// import { ColorSchemeToggle } from '../components/ColorSchemeToggle/ColorSchemeToggle';
-// import { Welcome } from '../components/Welcome/Welcome';
+import { useEffect, useState } from 'react';
 import Head from 'next/head';
+import { log } from 'console';
 import Card from '@/components/Card/Card';
+// import { ColorSchemeToggle } from '../components/ColorSchemeToggle/ColorSchemeToggle';
 import styles from './index.module.css';
 
+const getPosts = async () => {
+  try {
+    const res = await fetch('https://jsonplaceholder.typicode.com/posts');
+    const data = await res.json();
+    return data;
+  } catch (error) {
+    console.log(error);
+  }
+};
+
 export default function HomePage() {
+  const [posts, setPosts] = useState([]);
+
+  const fetchPosts = async () => {
+    const data = await getPosts();
+    if (data) {
+      setPosts(data);
+    }
+  };
+
+  useEffect(() => {
+    fetchPosts();
+  }, []);
+
+  // console.log(posts);
+
   return (
     <>
       <Head>
         <title>Home</title>
       </Head>
-      {/* <Welcome /> */}
       <div className={styles.homePage}>
         <h2>Καλώς ήρθατε στην ιστοσελιδα "Φίλοι Χωρίς Σπίτι"</h2>
         <h3>Μαζί, μπορούμε να κάνουμε τον κόσμο καλύτερο για τα αδέσποτα ζώα.</h3>
@@ -21,13 +46,15 @@ export default function HomePage() {
         <p>Υιοθέτησε,πρόσφερε εθελοντική βοήθεια ή κάνε μια δωρεά σήμερα.</p>
         <h4>Δώσε Ελπίδα, Δώσε Αγάπη</h4>
       </div>
-      <div className={styles.cards}>
-        <Card />
-        <Card />
-        <Card />
-        <Card />
-        <Card />
-      </div>
+      <Card />
+
+      {/* <div className={styles.cards}>
+        {posts?.map((post: Post) => (
+          <div key={post.id}>
+            <Card title={post.title} image={post.image} text={post.text} date={post.date} />
+          </div>
+        ))}
+      </div> */}
     </>
   );
 }
