@@ -1,13 +1,14 @@
 import { useEffect, useState } from 'react';
 import Head from 'next/head';
-import { log } from 'console';
 import Card from '@/components/Card/Card';
 // import { ColorSchemeToggle } from '../components/ColorSchemeToggle/ColorSchemeToggle';
 import styles from './index.module.css';
 
-const getPosts = async () => {
+const getDataFromEndpoint = async ({ category }: { category: string }) => {
   try {
-    const res = await fetch('https://jsonplaceholder.typicode.com/posts');
+    // const res = await fetch(`https://jsonplaceholder.typicode.com/${category}`);
+    const res = await fetch(`http://localhost:3000/api/${category}`);
+
     const data = await res.json();
     return data;
   } catch (error) {
@@ -19,7 +20,7 @@ export default function HomePage() {
   const [posts, setPosts] = useState([]);
 
   const fetchPosts = async () => {
-    const data = await getPosts();
+    const data = await getDataFromEndpoint({ category: 'posts' });
     if (data) {
       setPosts(data);
     }
@@ -29,7 +30,7 @@ export default function HomePage() {
     fetchPosts();
   }, []);
 
-  // console.log(posts);
+  console.log(posts);
 
   return (
     <>
@@ -46,7 +47,13 @@ export default function HomePage() {
         <p>Υιοθέτησε,πρόσφερε εθελοντική βοήθεια ή κάνε μια δωρεά σήμερα.</p>
         <h4>Δώσε Ελπίδα, Δώσε Αγάπη</h4>
       </div>
-      <Card />
+      <div className={styles.cards}>
+        <Card />
+        <Card />
+        <Card />
+        <Card />
+        <Card />
+      </div>
 
       {/* <div className={styles.cards}>
         {posts?.map((post: Post) => (
