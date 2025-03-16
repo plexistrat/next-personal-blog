@@ -52,7 +52,7 @@ export default function HomePage() {
         <Card />
         <Card />
         <Card />
-        <Card />
+        {/* <Card /> */}
       </div>
 
       {/* <div className={styles.cards}>

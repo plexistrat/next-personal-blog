@@ -19,7 +19,21 @@
   box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.6);
   transition: 0.3s;
   cursor: pointer;
-  /* transform: scale(1.05); */
+  transform: scale(1.009);
+
+  .cardDummy {
+    box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.6);
+    cursor: pointer;
+    transition: 0.3s;
+    transform: scale(0.95);
+    color: rgb(151, 151, 54);
+  }
+  .cardTitle {
+    color: rgb(151, 151, 54);
+  }
+  .cardDate {
+    color: rgb(151, 151, 54);
+  }
 }
 
 .cardTitle {
@@ -29,9 +43,6 @@
   -webkit-box-orient: vertical;
   overflow: hidden;
   font-size: 14px;
-}
-.cardTitle:hover {
-  color: rgb(151, 151, 54);
 }
 
 .cardDate {
@@ -52,9 +63,9 @@
   border-radius: 15px;
   margin-top: 350px;
 }
-.cardDummy:hover {
+/* .cardDummy:hover {
   box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.6);
   cursor: pointer;
   transition: 0.3s;
   transform: scale(0.95);
-}
+} */
