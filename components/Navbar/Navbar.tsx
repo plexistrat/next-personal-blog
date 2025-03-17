@@ -58,7 +58,7 @@ const Navbar = () => {
               ? { color: 'transparent', textDecoration: 'none' }
               : { color: 'black', textDecoration: 'none' }
           }
-          href="/contact"
+          href="/news"
         >
           Νέα
         </Link>
@@ -68,7 +68,7 @@ const Navbar = () => {
               ? { color: 'transparent', textDecoration: 'none' }
               : { color: 'black', textDecoration: 'none' }
           }
-          href="/news"
+          href="/contact"
         >
           Επικοινωνία
         </Link>

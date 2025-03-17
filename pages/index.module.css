@@ -38,39 +38,7 @@
     margin: 10px;
   }
 }
-.homePageBanner {
-  max-width: 900px;
-  height: 400px;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  background-image:
-    linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.7)), url('/homelessSouls.jpg');
-  margin-top: 200px;
-  margin-bottom: 200px;
-  margin-left: auto;
-  margin-right: auto;
-  background-position: top center;
-  background-repeat: no-repeat;
-}
 
-.homePageBanner h4 {
-  font-size: 30px;
-  color: white;
-
-  @media screen and (max-width: 780px) {
-    font-size: 25px;
-  }
-}
-.homePageBanner p {
-  color: white;
-  font-size: 25px;
-
-  @media screen and (max-width: 780px) {
-    font-size: 16px;
-  }
-}
 .cards {
   display: flex;
   flex-direction: row;
