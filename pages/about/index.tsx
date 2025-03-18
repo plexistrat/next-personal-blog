@@ -10,7 +10,6 @@ const About = (props: Props) => {
     <div className={styles.about}>
       <h2>Ενημέρωση</h2>
       <Banner />
-      <Card />
     </div>
   );
 };

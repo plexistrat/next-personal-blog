@@ -1,7 +1,9 @@
 import { useEffect, useState } from 'react';
 import Head from 'next/head';
+import Link from 'next/link';
 import Banner from '@/components/Banner/Banner';
 import Card from '@/components/Card/Card';
+import About from './about';
 // import { ColorSchemeToggle } from '../components/ColorSchemeToggle/ColorSchemeToggle';
 import styles from './index.module.css';
 
@@ -45,18 +47,11 @@ export default function HomePage() {
       </div>
       <Banner />
 
-      {/* <div className={styles.cards}>
-        <Card />
-        <Card />
-        <Card />
-        <Card />
-      </div> */}
-
       <div className={styles.cards}>
         {posts?.map((post: post) => (
-          <div key={post.id}>
-            <Card title={post.title} image={post.image} text={post.text} date={post.date} />
-          </div>
+          <Link href={`/posts/${post.id}`} key={post.id}>
+            <Card title={post.title} image={post.image} date={post.date} />
+          </Link>
         ))}
       </div>
     </>
