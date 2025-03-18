@@ -70,7 +70,7 @@ const Navbar = () => {
           }
           href="/contact"
         >
-          Επικοινωνία
+          SOS Info
         </Link>
       </div>
       <BurgerButton />

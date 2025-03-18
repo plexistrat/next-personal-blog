@@ -45,20 +45,20 @@ export default function HomePage() {
       </div>
       <Banner />
 
-      <div className={styles.cards}>
-        <Card />
-        <Card />
-        <Card />
-        <Card />
-      </div>
-
       {/* <div className={styles.cards}>
-        {posts?.map((post: Post) => (
+        <Card />
+        <Card />
+        <Card />
+        <Card />
+      </div> */}
+
+      <div className={styles.cards}>
+        {posts?.map((post: post) => (
           <div key={post.id}>
             <Card title={post.title} image={post.image} text={post.text} date={post.date} />
           </div>
         ))}
-      </div> */}
+      </div>
     </>
   );
 }
