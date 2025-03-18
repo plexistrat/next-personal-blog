@@ -9,14 +9,16 @@
   margin: 20px;
   transition: 0.3s;
   cursor: pointer;
-  /* background-image: url('https://www.ygeiamou.gr/wp-content/uploads/2020/11/201118120944_dogsad.jpg');
+  background-image: url('https://www.ygeiamou.gr/wp-content/uploads/2020/11/201118120944_dogsad.jpg');
   background-size: cover;
   background-position: center;
-  background-repeat: no-repeat; */
+  background-repeat: no-repeat;
 }
 .cardImage {
-  width: 400px;
-  height: 500px;
+  /* border-radius: 15px;
+  object-fit: cover;
+  transition: 0.3s;
+  cursor: pointer;  */
 }
 
 .card:hover {
