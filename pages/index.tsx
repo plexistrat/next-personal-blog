@@ -3,7 +3,6 @@ import Head from 'next/head';
 import Link from 'next/link';
 import Banner from '@/components/Banner/Banner';
 import Card from '@/components/Card/Card';
-import About from './about';
 // import { ColorSchemeToggle } from '../components/ColorSchemeToggle/ColorSchemeToggle';
 import styles from './index.module.css';
 
