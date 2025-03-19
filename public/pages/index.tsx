@@ -49,7 +49,7 @@ export default function HomePage() {
 
       <div className={styles.cards}>
         {posts?.map((post: post) => (
-          <Link href={`/posts/${post.id}`} key={post.id}>
+          <Link style={{ textDecoration: 'none' }} href={`/posts/${post.id}`} key={post.id}>
             <Card title={post.title} image={post.image} date={post.date} />
           </Link>
         ))}

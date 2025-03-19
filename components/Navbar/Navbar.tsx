@@ -1,5 +1,5 @@
 import { useEffect, useState } from 'react';
-import Image from 'next/image';
+// import Image from 'next/image';
 import Link from 'next/link';
 import BurgerButton from './NavbarBurger';
 import styles from './Navbar.module.css';
@@ -28,8 +28,16 @@ const Navbar = () => {
 
   return (
     <div className={color ? styles.navbarNoColor : styles.navbar}>
-      <h2 className={styles.navbarTitle}>Φίλοι Χωρίς Σπίτι </h2>
-      {/* <Image src="/logo.png" className={styles.navbarLogo} width={50} height={50} alt="logo" /> */}
+      <Link
+        style={
+          color
+            ? { color: 'transparent', textDecoration: 'none' }
+            : { color: 'black', textDecoration: 'none' }
+        }
+        href="/"
+      >
+        <h2 className={styles.navbarTitle}>Φίλοι Χωρίς Σπίτι </h2>
+      </Link>
 
       <div className={styles.navbarButtons}>
         <Link
@@ -52,7 +60,7 @@ const Navbar = () => {
         >
           Ενημέρωση
         </Link>
-        <Link
+        {/* <Link
           style={
             color
               ? { color: 'transparent', textDecoration: 'none' }
@@ -61,7 +69,7 @@ const Navbar = () => {
           href="/news"
         >
           Νέα
-        </Link>
+        </Link> */}
         <Link
           style={
             color

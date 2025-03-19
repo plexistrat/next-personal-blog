@@ -1,5 +1,4 @@
 import React from 'react';
-import Banner from '@/components/Banner/Banner';
 import styles from './Contact.module.css';
 
 type Props = {};
@@ -7,7 +6,6 @@ type Props = {};
 const Contact = (props: Props) => {
   return (
     <div className={styles.contact}>
-      {/* <Banner /> */}
       <h1>Φορείς και Οργανώσεις για Υιοθεσία, Διάσωση, Δωρεές και Στειρώσεις Αδέσποτων Ζώων</h1>
       <p>
         Η φροντίδα των αδέσποτων ζώων είναι μια σημαντική κοινωνική δράση που μπορεί να γίνει μέσω
