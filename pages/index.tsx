@@ -3,6 +3,7 @@ import Head from 'next/head';
 import Link from 'next/link';
 import Banner from '@/components/Banner/Banner';
 import Card from '@/components/Card/Card';
+import { PostType } from '@/types';
 // import { ColorSchemeToggle } from '../components/ColorSchemeToggle/ColorSchemeToggle';
 import styles from './index.module.css';
 
@@ -19,7 +20,7 @@ const getDataFromEndpoint = async ({ category }: { category: string }) => {
 };
 
 export default function HomePage() {
-  const [posts, setPosts] = useState([]);
+  const [posts, setPosts] = useState<PostType[]>([]);
 
   const fetchPosts = async () => {
     const data = await getDataFromEndpoint({ category: 'posts' });
@@ -31,8 +32,6 @@ export default function HomePage() {
   useEffect(() => {
     fetchPosts();
   }, []);
-
-  console.log(posts);
 
   return (
     <>
@@ -47,7 +46,7 @@ export default function HomePage() {
       <Banner />
 
       <div className={styles.cards}>
-        {posts?.map((post: post) => (
+        {posts?.map((post) => (
           <Link style={{ textDecoration: 'none' }} href={`/posts/${post.id}`} key={post.id}>
             <Card title={post.title} image={post.image} date={post.date} />
           </Link>

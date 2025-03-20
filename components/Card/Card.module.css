@@ -13,12 +13,6 @@
   background-position: center;
   background-repeat: no-repeat;
 }
-.cardImage {
-  /* border-radius: 15px;
-  object-fit: cover;
-  transition: 0.3s;
-  cursor: pointer;  */
-}
 
 .card:hover {
   box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.6);
