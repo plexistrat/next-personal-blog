@@ -80,6 +80,17 @@ const Navbar = () => {
         >
           SOS Info
         </Link>
+
+        <Link
+          style={
+            color
+              ? { color: 'transparent', textDecoration: 'none' }
+              : { color: 'black', textDecoration: 'none' }
+          }
+          href="/adopted"
+        >
+          Υιοθεσίες
+        </Link>
       </div>
       <BurgerButton />
     </div>

@@ -1,4 +1,5 @@
 import React from 'react';
+import Banner from '@/components/Banner/Banner';
 import styles from './About.module.css';
 
 const About = () => {
@@ -55,6 +56,8 @@ const About = () => {
         συνεισφέρετε, μπορείτε να συμμετέχετε σε δράσεις, να γίνετε εθελοντές ή ακόμα και να
         προσφέρετε ένα σπίτι σε ένα αδέσποτο μέσω υιοθεσίας.
       </p>
+      <Banner />
+
       <p className={styles.lastparagraph}>
         Ακολουθώντας αυτές τις πηγές ενημέρωσης, μπορούμε όλοι να βοηθήσουμε στη δημιουργία μιας πιο
         φιλόζωης κοινωνίας! 🐾

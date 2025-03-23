@@ -3,7 +3,6 @@
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  /* background-color: #fff5e1; */
 
   @media screen and (max-width: 1000px) {
     width: 700px;
@@ -135,4 +134,7 @@
   @media screen and (max-width: 800px) {
     padding-bottom: 50px;
   }
+}
+.image {
+  margin-top: 100px;
 }

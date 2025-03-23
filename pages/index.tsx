@@ -4,7 +4,6 @@ import Link from 'next/link';
 import Banner from '@/components/Banner/Banner';
 import Card from '@/components/Card/Card';
 import { PostType } from '@/types';
-// import { ColorSchemeToggle } from '../components/ColorSchemeToggle/ColorSchemeToggle';
 import styles from './index.module.css';
 
 const getDataFromEndpoint = async ({ category }: { category: string }) => {
@@ -41,7 +40,6 @@ export default function HomePage() {
       <div className={styles.homePage}>
         <h2>Καλώς ήρθατε στην ιστοσελιδα "Φίλοι Χωρίς Σπίτι"</h2>
         <h3>Μαζί, μπορούμε να κάνουμε τον κόσμο καλύτερο για τα αδέσποτα ζώα.</h3>
-        {/* <ColorSchemeToggle /> */}
       </div>
       <Banner />
 

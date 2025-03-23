@@ -5,7 +5,7 @@
   align-items: center;
   height: 100vh;
   background-color: #fff5e1;
-  background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url('/heroImage.jpg');
+  background-image: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.2)), url('/heroImage.jpg');
   margin-top: 90px;
   background-size: cover;
   background-position: top center;

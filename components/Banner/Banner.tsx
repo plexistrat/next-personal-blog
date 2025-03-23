@@ -1,9 +1,8 @@
 import React from 'react';
+import Image from 'next/image';
 import styles from './Banner.module.css';
 
-type Props = {};
-
-const Banner = (props: Props) => {
+const Banner = () => {
   return (
     <div className={styles.homePageBanner}>
       <h4>Γίνε η φωνή τους</h4>
