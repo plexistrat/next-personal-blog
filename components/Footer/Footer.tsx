@@ -5,7 +5,6 @@ import { TiSocialTwitter } from 'react-icons/ti';
 import styles from './Footer.module.css';
 
 const Footer = () => {
-  const [year, setYear] = useState(new Date().getFullYear());
   const [showButton, setShowButton] = useState(false);
 
   useEffect(() => {
@@ -25,7 +24,7 @@ const Footer = () => {
     window.scrollTo({ top: 0, behavior: 'smooth' });
   };
 
-  const handleSubmit = (e) => {
+  const handleSubmit = (e: React.FormEvent) => {
     e.preventDefault();
     alert('Thanks for subscribing!');
   };
@@ -75,7 +74,7 @@ const Footer = () => {
       )}
 
       <div className={styles.copyright}>
-        <p>&copy; {year} Φίλοι Χωρίς Σπίτι. All Rights Reserved.</p>
+        <p>&copy; 2025 Φίλοι Χωρίς Σπίτι. All Rights Reserved.</p>
       </div>
     </footer>
   );
