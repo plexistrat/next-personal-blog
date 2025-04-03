@@ -26,7 +26,7 @@ const Footer = () => {
 
   const handleSubmit = (e: React.FormEvent) => {
     e.preventDefault();
-    alert('Thanks for subscribing!');
+    // alert('Thanks for subscribing!');
   };
 
   return (
