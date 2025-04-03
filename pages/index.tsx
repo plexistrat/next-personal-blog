@@ -9,7 +9,7 @@ import styles from './index.module.css';
 const getDataFromEndpoint = async ({ category }: { category: string }) => {
   try {
     // const res = await fetch(`https://jsonplaceholder.typicode.com/${category}`);
-    const res = await fetch(`http://localhost:3000/api/${category}`);
+    const res = await fetch(`https://next-personal-blog-nine.vercel.app/api/${category}`);
 
     const data = await res.json();
     return data;
