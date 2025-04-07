@@ -62,13 +62,21 @@
 }
 
 .newsletterForm input {
+  width: 200px;
+  margin-right: 10px;
   padding: 8px;
   font-size: 14px;
   border: none;
   border-radius: 18px;
 
-  @media screen and (max-width: 1000px) {
+  @media screen and (max-width: 1200px) {
+    width: 150px;
     font-size: 12px;
+  }
+
+  @media screen and (max-width: 1000px) {
+    width: 100px;
+    font-size: 10px;
   }
 }
 
@@ -96,6 +104,10 @@
   position: fixed;
   bottom: 20px;
   right: 20px;
+
+  @media screen and (max-width: 1000px) {
+    display: none;
+  }
 }
 
 .scrollTopButton:hover {
