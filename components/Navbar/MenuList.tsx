@@ -11,17 +11,17 @@ function MenuList() {
         </li>
         <li>
           <a href="/about" className={styles.menuListItem}>
-            About
+            Ενημέρωση
           </a>
         </li>
         <li>
           <a href="/news" className={styles.menuListItem}>
-            News
+            SOS Info
           </a>
         </li>
         <li>
           <a href="/contact" className={styles.menuListItem}>
-            Contact
+            Υιοθεσίες
           </a>
         </li>
       </ul>
