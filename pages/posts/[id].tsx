@@ -4,6 +4,8 @@ import { PostType } from '@/types';
 
 export const getDataFromEndpoint = async ({ category }: { category: string }) => {
   try {
+    // const res = await fetch(`http://localhost:3000/api/${category}`);
+
     const res = await fetch(`https://next-personal-blog-nine.vercel.app/api/${category}`);
     const data = await res.json();
     return data;
@@ -36,7 +38,7 @@ const Details = () => {
   return (
     <div style={{ display: 'flex', flexDirection: 'column', alignItems: 'center' }}>
       <h1 style={{ textAlign: 'center', marginTop: '156px', fontWeight: 'bold' }}>{post?.title}</h1>
-      <p style={{ width: '800px' }}>{post?.text}x</p>
+      <p style={{ margin: '100px' }}>{post?.text}x</p>
       <p style={{ marginBottom: '200px' }}>{post?.date}</p>
     </div>
   );

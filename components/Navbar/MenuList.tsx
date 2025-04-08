@@ -15,12 +15,12 @@ function MenuList() {
           </a>
         </li>
         <li>
-          <a href="/news" className={styles.menuListItem}>
+          <a href="/contact" className={styles.menuListItem}>
             SOS Info
           </a>
         </li>
         <li>
-          <a href="/contact" className={styles.menuListItem}>
+          <a href="/adopted" className={styles.menuListItem}>
             Υιοθεσίες
           </a>
         </li>

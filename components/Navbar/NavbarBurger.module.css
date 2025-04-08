@@ -3,14 +3,8 @@
   cursor: pointer;
   background-color: transparent;
   border: none;
-  position: fixed;
 
   @media screen and (max-width: 750px) {
     display: block;
-    right: 20px;
-  }
-
-  @media screen and (max-width: 500px) {
-    right: 10px;
   }
 }
