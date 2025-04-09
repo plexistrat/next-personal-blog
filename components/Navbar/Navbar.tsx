@@ -5,7 +5,7 @@ import BurgerButton from './NavbarBurger';
 import styles from './Navbar.module.css';
 
 const links = [
-  { href: '/', label: 'Home' },
+  { href: '/', label: 'Αρχική' },
   { href: '/about', label: 'Ενημέρωση' },
   { href: '/contact', label: 'SOS Info' },
   { href: '/adopted', label: 'Υιοθεσίες' },
@@ -29,7 +29,7 @@ const Navbar = () => {
       </div>
 
       <BurgerButton toggle={toggle} />
-      {opened && <MenuList toggle={toggle} />}
+      {opened && <MenuList toggle={toggle} links={links} />}
     </div>
   );
 };
