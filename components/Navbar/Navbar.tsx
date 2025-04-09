@@ -4,6 +4,13 @@ import MenuList from './MenuList';
 import BurgerButton from './NavbarBurger';
 import styles from './Navbar.module.css';
 
+const links = [
+  { href: '/', label: 'Home' },
+  { href: '/about', label: 'Ενημέρωση' },
+  { href: '/contact', label: 'SOS Info' },
+  { href: '/adopted', label: 'Υιοθεσίες' },
+];
+
 const Navbar = () => {
   const [opened, { toggle }] = useDisclosure();
 
@@ -14,20 +21,11 @@ const Navbar = () => {
       </Link>
 
       <div className={styles.navbarButtons}>
-        <Link style={{ color: 'black', textDecoration: 'none' }} href="/">
-          Home
-        </Link>
-        <Link style={{ color: 'black', textDecoration: 'none' }} href="/about">
-          Ενημέρωση
-        </Link>
-
-        <Link style={{ color: 'black', textDecoration: 'none' }} href="/contact">
-          SOS Info
-        </Link>
-
-        <Link style={{ color: 'black', textDecoration: 'none' }} href="/adopted">
-          Υιοθεσίες
-        </Link>
+        {links.map((link) => (
+          <Link key={link.href} style={{ color: 'black', textDecoration: 'none' }} href={link.href}>
+            {link.label}
+          </Link>
+        ))}
       </div>
 
       <BurgerButton toggle={toggle} />
