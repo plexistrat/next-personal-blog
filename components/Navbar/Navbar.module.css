@@ -7,8 +7,6 @@
   background-color: #ff914d;
   color: #333333;
   padding: 10px 35px;
-  position: fixed;
-  top: 0;
   transition: all 0.3s ease;
   z-index: 10;
 
@@ -41,7 +39,6 @@
     align-items: center;
     justify-content: center;
     font-size: 30px;
-    margin-left: 50px;
   }
 
   @media screen and (max-width: 790px) {

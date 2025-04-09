@@ -1,6 +1,7 @@
+import { RiCloseLargeFill } from 'react-icons/ri';
 import styles from './MenuList.module.css';
 
-function MenuList() {
+function MenuList({ toggle }: { toggle: () => void }) {
   return (
     <div className={styles.menuList}>
       <ul className={styles.menuListItems}>
@@ -25,6 +26,7 @@ function MenuList() {
           </a>
         </li>
       </ul>
+      <RiCloseLargeFill className={styles.closeButton} onClick={toggle} />
     </div>
   );
 }
