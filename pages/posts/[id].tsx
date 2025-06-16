@@ -19,7 +19,6 @@ const Details = () => {
 
   const params = useParams();
   const selecedId = params?.id;
-  // console.log(selecedId);
 
   const fetchPostsDetails = async () => {
     const data = await getDataFromEndpoint({ category: `postDetails?id=${selecedId}` });
