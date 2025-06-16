@@ -2,7 +2,6 @@ import React from 'react';
 import styles from './AnimalsCard.module.css';
 
 const AnimalCards = () => {
-  // Sample animal data
   const animals = [
     {
       id: 1,
@@ -39,8 +38,6 @@ const AnimalCards = () => {
       age: '4 years',
       image: 'https://www.goldenrescue.com/wp-content/uploads/2021/03/Bella-1.jpg',
     },
-
-    // ... other animals
   ];
 
   return (

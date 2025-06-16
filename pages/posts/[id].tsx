@@ -21,7 +21,7 @@ const Details = () => {
   const selecedId = params?.id;
   // console.log(selecedId);
 
-  const fetchPosts = async () => {
+  const fetchPostsDetails = async () => {
     const data = await getDataFromEndpoint({ category: `postDetails?id=${selecedId}` });
     if (data) {
       setPost(data);
@@ -30,10 +30,9 @@ const Details = () => {
 
   useEffect(() => {
     if (selecedId) {
-      fetchPosts();
+      fetchPostsDetails();
     }
   }, [selecedId]);
-  // console.log(posts);
 
   return (
     <div style={{ display: 'flex', flexDirection: 'column', alignItems: 'center' }}>

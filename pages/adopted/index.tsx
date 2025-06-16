@@ -1,9 +1,7 @@
 import React from 'react';
 import AnimalCards from '@/components/AnimalsCard/AnimalsCard';
 
-type Props = {};
-
-const Adoption = (props: Props) => {
+const Adoption = () => {
   return (
     <div>
       <h1>Υιοθεσίες</h1>

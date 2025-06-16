@@ -1,9 +1,7 @@
 import React from 'react';
 import styles from './Contact.module.css';
 
-type Props = {};
-
-const Contact = (props: Props) => {
+const Contact = () => {
   return (
     <div className={styles.contact}>
       <h1>Φορείς και Οργανώσεις για Υιοθεσία, Διάσωση, Δωρεές και Στειρώσεις Αδέσποτων Ζώων</h1>
